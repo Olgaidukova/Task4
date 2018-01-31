@@ -41,7 +41,6 @@ public class BaseSteps {
                 driver = new ChromeDriver();
         }
 
-        //action = new Actions(driver);
         baseUrl = properties.getProperty("app.url");
         System.out.println(baseUrl);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
